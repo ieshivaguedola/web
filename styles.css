@@ -1,0 +1,94 @@
+/* Estilo para el cuerpo y el fondo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilo de la barra de navegaci—n */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Estilo del fondo de la p‡gina */
+h1, h2 {
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Pie de p‡gina */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilo para la secci—n del logo y la foto de los alumnos */
+.branding {
+    display: flex;
+    justify-content: space-between; /* Alinea las im‡genes a los extremos */
+    align-items: center;
+    background-color: white; /* Fondo blanco */
+    padding: 30px; /* A–adir m‡s espacio alrededor */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Estilo del logo */
+.branding .logo {
+    flex: 1; /* Permite que el logo ocupe una proporci—n flexible */
+    display: flex;
+    justify-content: flex-start; /* Alinea el logo a la izquierda */
+}
+
+.branding .logo img {
+    max-width: 150px; /* Limita el tama–o del logo */
+    height: auto;
+}
+
+/* Estilo de la foto de los alumnos */
+.branding .alumnos-photo {
+    flex: 2; /* Permite que la foto ocupe m‡s espacio */
+    display: flex;
+    justify-content: flex-end; /* Alinea la foto a la derecha */
+}
+
+.branding .alumnos-photo img {
+    max-width: 450px; /* Tama–o mayor para la foto de los alumnos */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para la foto */
+}
