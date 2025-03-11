@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ingreso de Cliente</title>
+</head>
+<body>
+    <h2>Formulario de Ingreso de Cliente</h2>
+    <form id="clientForm">
+        <label for="codigo">Código (6 caracteres):</label>
+        <input type="text" id="codigo" name="codigo" maxlength="6" required>
+        <br><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        // Esta función enviará los datos del formulario a Google Apps Script
+        document.getElementById("clientForm").onsubmit = function(event) {
+            event.preventDefault(); // Previene el envío normal del formulario
+
+            var codigo = document.getElementById("codigo").value;
+            var nombre = document.getElementById("nombre").value;
+            var email = document.getElementById("email").value;
+            var telefono = document.getElementById("telefono").value;
+
+            // Aquí especificas el URL de tu Google Apps Script (lo obtendrás más adelante)
+            var url = "https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbwAjDjGh4zkwVgjfWDF2g-PPACnweKbMwHS_ZcOaUe713e0jahJWTR9-DjO3qQvc0AB2g/exec";
+
+            var data = {
+                "codigo": codigo,
+                "nombre": nombre,
+                "email": email,
+                "telefono": telefono
+            };
+
+            // Enviar los datos al Google Apps Script usando fetch
+            fetch(url, {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert("Cliente ingresado correctamente.");
+                document.getElementById("clientForm").reset(); // Limpia el formulario
+            })
+            .catch(error => {
+                alert("Hubo un error al ingresar el cliente.");
+                console.error("Error:", error);
+            });
+        };
+    </script>
+</body>
+</html>
