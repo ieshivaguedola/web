@@ -1,94 +1,76 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description" content="Yeshiva Gedolah of Buenos Aires - A space designed exclusively for men aged 13 to 17 to develop and deepen their knowledge of Torah.">
     <title>Yeshiva Gedolah of Buenos Aires</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="staffindex.css"> <!-- Archivo CSS -->
 </head>
+
 <body>
+    <!-- Barra de navegaci—n -->
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Yeshiva Gedolah of Buenos Aires</a>
+            </div>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="mission.html">Mission and Values</a></li>
                 <li><a href="staff.html">Staff</a></li>
                 <li><a href="enrollment.html">Enrollment</a></li>
             </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
-    <!-- Logo and Alumnos Photo Section -->
-
+<!-- Logo y Foto de Alumnos dentro de un recuadro sombreado -->
     <section class="branding">
-
-        <div class="logo">
-
-            <img src="logo.jpg" alt="Ieshiva Gedolah Logo" width="150">
-
+        <div class="section-container">
+            <div class="logo-alumnos">
+                <div class="logo">
+                    <img src="logo.jpg" alt="Yeshiva Gedolah Logo" width="150">
+                </div>
+                <div class="alumnos-photo">
+                    <img src="alumnos.jpg" alt="Alumnos of Yeshiva Gedolah" width="300">
+                </div>
+            </div>
         </div>
-
-        <div class="alumnos-photo">
-            <img src="alumnos.jpg" alt="Alumnos of Ieshiva Guedola" width="300">
-        </div>
-
-
     </section>
 
-
-
     <main>
-
-        <section class="hero">
-
-            <h1>Welcome to Yeshiva Gedolah of Buenos Aires</h1>
-
-            <p>An exclusive space created by and for bochrim aged 13 to 17 to deepen their Torah knowledge in its literal, moral, and mystical dimensions.</p>
-
-        </section>
-
-
-
+        <!-- About Section -->
         <section class="about">
-
-            <h2>About Us</h2>
-
-            <p> Yeshiva Gedolah of Buenos Aires is dedicated to the development and deepening of Torah study, focusing not only on its literal and moral aspects but also on its inner and mystical dimensions.</p>
-
+            <div class="section-container">
+                <h2>About Us</h2>
+                <p>Yeshiva Gedolah of Buenos Aires is dedicated to the development and deepening of Torah study, focusing not only on its literal and moral aspects but also on its inner and mystical dimensions.</p>
+            </div>
         </section>
 
-
-
+        <!-- Programs Section -->
         <section class="programs">
-
-            <h2>Our Programs</h2>
-
-            <p>We offer in-depth Torah studies, spiritual guidance, and unique opportunities for personal growth, tailored to students' needs.</p>
-
+            <div class="section-container">
+                <h2>Our Programs</h2>
+                <p>We offer in-depth Torah studies, spiritual guidance, and unique opportunities for personal growth, tailored to students' needs.</p>
+            </div>
         </section>
 
-
-
+        <!-- Contact Section -->
         <section class="contact">
-
-            <h2>Contact Us</h2>
-
-            <p>If you are interested in learning more or joining our programs, please reach out:</p>
-
-            <address>
-
-                Email: <a href="mailto: 
-IeshivaBuenosAires@gmail.com">
-IeshivaBuenosAires@gmail.com</a><br>
-
-                Whatsapp: +54-911-5417-7112
-            </address>
+            <div class="section-container">
+                <h2>Contact Us</h2>
+                <p>If you are interested in learning more or joining our programs, please reach out:</p>
+                <address>
+                    Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=YeshivaBuenosAires@gmail.com&su=Interested%20in%20Joining%20the%20Yeshiva&body=Hello%20Yeshiva%20Gedolah%20of%20Buenos%20Aires,%20I%20am%20interested%20in%20joining%20your%20programs.%20Please%20provide%20more%20information.">YeshivaBuenosAires@gmail.com</a><br>
+                    Whatsapp: <a href="https://wa.me/5491154177112" target="_blank">+54-911-5417-7112</a>
+                </address>
+            </div>
         </section>
     </main>
 
@@ -96,4 +78,5 @@ IeshivaBuenosAires@gmail.com</a><br>
         <p>&copy; 2025 Yeshiva Gedolah of Buenos Aires. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
